@@ -6,8 +6,8 @@ import "fmt"
 func main() {
 	var x float64
 	fmt.Println("Необходимо найти периметр квадрата")
-	x = number("Введите значение стороны:")
-    fmt.Println("Периметр равен: ", 4*x)
+	x = number("Введите значение стороны")
+    fmt.Println("Периметр равен:\t", 4*x)
 }
 
 func number(msg string) float64 {
