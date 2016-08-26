@@ -1,14 +1,16 @@
 // Package util утилиты для решения задач
 package util
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // Number ввод числа в stdin
 func Number(msg string) float64 {
 	fmt.Print(msg + " > ")
 	var num float64
-	fmt.Scan(&num)
+	_, err := fmt.Scanf("%f", &num)
+	if err != nil {
+		fmt.Println("Ввод неверных данных")
+		panic(err)
+	}
 	return num
 }
