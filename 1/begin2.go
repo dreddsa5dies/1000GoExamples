@@ -7,7 +7,7 @@ func main() {
 	var x float64
 	fmt.Println("Необходимо найти площадь квадрата")
 	x = number("Введите значение стороны")
-    fmt.Println("Площадь равна:\t", x*x)
+	fmt.Println("Площадь равна:\t", x*x)
 }
 
 func number(msg string) float64 {

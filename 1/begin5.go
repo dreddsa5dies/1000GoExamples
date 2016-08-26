@@ -10,7 +10,7 @@ func main() {
 	fmt.Println("Необходимо найти объем куба и площадь его поверхности")
 	x = number("Введите значение длины ребра куба")
 	fmt.Println("Объем равен:\t", x*x*x)
-    fmt.Println("Площадь равна:\t", 6*x*x)
+	fmt.Println("Площадь равна:\t", 6*x*x)
 }
 
 func number(msg string) float64 {
