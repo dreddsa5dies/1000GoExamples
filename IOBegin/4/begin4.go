@@ -4,18 +4,13 @@ package main
 import (
 	"fmt"
 	"math"
+
+	"github.com/dreddsa5dies/1000GoExamples/util"
 )
 
 func main() {
 	var x float64
 	fmt.Println("Необходимо найти длину окружности")
-	x = number("Введите значение диаметра окружности")
+	x = util.Number("Введите значение диаметра окружности")
 	fmt.Println("Длина равна:\t", x*math.Pi)
-}
-
-func number(msg string) float64 {
-	fmt.Print(msg + " > ")
-	var num float64
-	fmt.Scan(&num)
-	return num
 }
