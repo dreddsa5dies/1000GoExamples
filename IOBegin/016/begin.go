@@ -1,20 +1,16 @@
-// Дана длина L окружности. Найти ее радиус R и площадь S круга,
-// ограниченного этой окружностью, учитывая, что L = 2· π · R , S = π · R^2 . В ка-
-// честве значения π использовать 3.14.
+// Найти расстояние между двумя точками с заданными координатами
+// x 1 и x 2 на числовой оси: | x 2 – x 1 |
 package main
 
 import (
 	"fmt"
-	"math"
 
 	"github.com/dreddsa5dies/1000GoExamples/util"
 )
 
 func main() {
 	var x, y float64
-	const pi2 = 2 * math.Pi
-	x = util.NoNNumber("Введите длину окружности")
-	y = x / pi2
-	fmt.Println("Радиус круга:\t", y)
-	fmt.Println("Площадь круга:\t", y*y*math.Pi)
+	x = util.Number("введите координату 1")
+	y = util.Number("введите координату 1")
+	fmt.Println("расстояние:\t", util.ModNumber(x-y))
 }
