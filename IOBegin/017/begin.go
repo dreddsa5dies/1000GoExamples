@@ -1,20 +1,20 @@
-// Дана длина L окружности. Найти ее радиус R и площадь S круга,
-// ограниченного этой окружностью, учитывая, что L = 2· π · R , S = π · R^2 . В ка-
-// честве значения π использовать 3.14.
+// Даны три точки A , B , C на числовой оси. Найти длины отрезков AC
+// и BC и их сумму
 package main
 
 import (
 	"fmt"
-	"math"
 
 	"github.com/dreddsa5dies/1000GoExamples/util"
 )
 
 func main() {
-	var x, y float64
-	const pi2 = 2 * math.Pi
-	x = util.NoNNumber("Введите длину окружности")
-	y = x / pi2
-	fmt.Println("Радиус круга:\t", y)
-	fmt.Println("Площадь круга:\t", y*y*math.Pi)
+	var x, y, z float64
+	x = util.Number("Введите точку А")
+	y = util.Number("Введите точку B")
+	z = util.Number("Введите точку C")
+	sum := util.ModNumber(x-z) + util.ModNumber(y-z)
+	fmt.Println("длина отрезка АС:\t", util.ModNumber(x-z))
+	fmt.Println("длина отрезка ВС:\t", util.ModNumber(y-z))
+	fmt.Println("сумма длинн отрезков:\t", sum)
 }
