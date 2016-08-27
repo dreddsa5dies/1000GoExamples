@@ -50,9 +50,8 @@ func NotNullNumber(msg string) float64 {
 	return num
 }
 
-// ModNumber модуля числа
+// ModNumber приведение к модулю числа
 func ModNumber(num float64) float64 {
-	fmt.Printf("Приведение к модулю |%v|\n", num)
 	if num < 0 {
 		num = -num
 	}
