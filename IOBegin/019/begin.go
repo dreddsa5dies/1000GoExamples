@@ -1,20 +1,20 @@
-// Дана длина L окружности. Найти ее радиус R и площадь S круга,
-// ограниченного этой окружностью, учитывая, что L = 2· π · R , S = π · R^2 . В ка-
-// честве значения π использовать 3.14.
+// Даны координаты двух противоположных вершин прямоугольника:
+// ( x 1 , y 1 ), ( x 2 , y 2 ). Стороны прямоугольника параллельны осям координат.
+// Найти периметр и площадь данного прямоугольника
 package main
 
 import (
 	"fmt"
-	"math"
 
 	"github.com/dreddsa5dies/1000GoExamples/util"
 )
 
 func main() {
-	var x, y float64
-	const pi2 = 2 * math.Pi
-	x = util.NoNNumber("Введите длину окружности")
-	y = x / pi2
-	fmt.Println("Радиус круга:\t", y)
-	fmt.Println("Площадь круга:\t", y*y*math.Pi)
+	var x1, y1, x2, y2 float64
+	x1 = util.Number("Введите координату х1")
+	y1 = util.Number("Введите координату y1")
+	x2 = util.Number("Введите координату х2")
+	y2 = util.Number("Введите координату y2")
+	fmt.Println("периметр прямоугольника\t: ", 2*(util.ModNumber(x1-x2)+util.ModNumber(y1-y2)))
+	fmt.Println("площадь прямоугольника\t: ", util.ModNumber(x1-x2)*util.ModNumber(y1-y2))
 }
