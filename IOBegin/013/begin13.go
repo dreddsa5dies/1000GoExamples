@@ -21,9 +21,9 @@ func main() {
 	x = util.ModNumber(x)
 	y = util.NotNullNumber("Введите радиус 2")
 	y = util.ModNumber(y)
-    z1 := math.Pi*x*x
-    z2 := math.Pi*y*y
+	z1 := math.Pi * x * x
+	z2 := math.Pi * y * y
 	fmt.Println("Площадь круга 1:\t", z1)
-    fmt.Println("Площадь круга 2:\t", z2)
+	fmt.Println("Площадь круга 2:\t", z2)
 	fmt.Println("Площадь кольца:\t\t", util.ModNumber(z1-z2))
 }
