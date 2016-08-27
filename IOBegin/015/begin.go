@@ -12,9 +12,8 @@ import (
 
 func main() {
 	var x, y float64
-	const pi2 = 2 * math.Pi
-	x = util.NoNNumber("Введите длину окружности")
-	y = x / pi2
-	fmt.Println("Радиус круга:\t", y)
-	fmt.Println("Площадь круга:\t", y*y*math.Pi)
+	x = util.NoNNumber("введите площадь S круга")
+	y = math.Sqrt((4 * x) / math.Pi)
+	fmt.Println("диаметр круга:\t\t", y)
+	fmt.Println("длина L окружности:\t", y*math.Pi)
 }
