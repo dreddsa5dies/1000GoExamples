@@ -1,20 +1,21 @@
-// Дана длина L окружности. Найти ее радиус R и площадь S круга,
-// ограниченного этой окружностью, учитывая, что L = 2· π · R , S = π · R^2 . В ка-
-// честве значения π использовать 3.14.
+// Дано число A. Вычислить A^8 , используя вспомогательную перемен-
+// ную и три операции умножения. Для этого последовательно находить A^2 ,
+// A^4 , A^8 . Вывести все найденные степени числа A
 package main
 
 import (
 	"fmt"
-	"math"
 
 	"github.com/dreddsa5dies/1000GoExamples/util"
 )
 
 func main() {
 	var x, y float64
-	const pi2 = 2 * math.Pi
-	x = util.NoNNumber("Введите длину окружности")
-	y = x / pi2
-	fmt.Println("Радиус круга:\t", y)
-	fmt.Println("Площадь круга:\t", y*y*math.Pi)
+	x = util.Number("Введите A")
+	y = x * x
+	fmt.Println("A^2:\t", y)
+	y = y * y
+	fmt.Println("A^4:\t", y)
+	y = y * y
+	fmt.Println("A^8:\t", y)
 }

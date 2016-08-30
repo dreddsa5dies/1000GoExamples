@@ -1,20 +1,18 @@
-// Дана длина L окружности. Найти ее радиус R и площадь S круга,
-// ограниченного этой окружностью, учитывая, что L = 2· π · R , S = π · R^2 . В ка-
-// честве значения π использовать 3.14.
+// Известно, что X кг конфет стоит A рублей. Определить, сколько стоит
+// 1 кг и Y кг этих же конфет
 package main
 
 import (
 	"fmt"
-	"math"
 
 	"github.com/dreddsa5dies/1000GoExamples/util"
 )
 
 func main() {
-	var x, y float64
-	const pi2 = 2 * math.Pi
-	x = util.NoNNumber("Введите длину окружности")
-	y = x / pi2
-	fmt.Println("Радиус круга:\t", y)
-	fmt.Println("Площадь круга:\t", y*y*math.Pi)
+	var x, y, z float64
+	x = util.NoNNumber("Введите X кол-во кг конфет")
+	y = util.NoNNumber("Введите их стоимость")
+	fmt.Println("1 кг стоит:\t", y/x)
+	z = util.NoNNumber("Введите Y кол-во кг конфет")
+	fmt.Printf("стоимость %v кг конфет:\t%v\n", z, z*(y/x))
 }

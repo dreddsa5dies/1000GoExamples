@@ -1,20 +1,26 @@
-// Дана длина L окружности. Найти ее радиус R и площадь S круга,
-// ограниченного этой окружностью, учитывая, что L = 2· π · R , S = π · R^2 . В ка-
-// честве значения π использовать 3.14.
+// Даны переменные A, B, C. Изменить их значения, переместив содер-
+// жимое A в C, C — в B, B — в A, и вывести новые значения переменных A,
+// B, C.
 package main
 
 import (
 	"fmt"
-	"math"
 
 	"github.com/dreddsa5dies/1000GoExamples/util"
 )
 
 func main() {
-	var x, y float64
-	const pi2 = 2 * math.Pi
-	x = util.NoNNumber("Введите длину окружности")
-	y = x / pi2
-	fmt.Println("Радиус круга:\t", y)
-	fmt.Println("Площадь круга:\t", y*y*math.Pi)
+	var x, y, z float64
+	x = util.Number("Введите A")
+	y = util.Number("Введите B")
+	z = util.Number("Введите C")
+	x = x + z
+	z = x - z // это теперь А
+	x = x - z // это теперь C
+	x = x + y
+	y = x - y // это теперь C
+	x = x - y // это теперь B
+	fmt.Println("замена А\t: ", x)
+	fmt.Println("замена B\t: ", y)
+	fmt.Println("замена C\t: ", z)
 }

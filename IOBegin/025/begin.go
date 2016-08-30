@@ -1,6 +1,4 @@
-// Дана длина L окружности. Найти ее радиус R и площадь S круга,
-// ограниченного этой окружностью, учитывая, что L = 2· π · R , S = π · R^2 . В ка-
-// честве значения π использовать 3.14.
+// Найти значение функции y = 3·x^6 – 6·x^2 – 7 при данном значении x
 package main
 
 import (
@@ -11,10 +9,7 @@ import (
 )
 
 func main() {
-	var x, y float64
-	const pi2 = 2 * math.Pi
-	x = util.NoNNumber("Введите длину окружности")
-	y = x / pi2
-	fmt.Println("Радиус круга:\t", y)
-	fmt.Println("Площадь круга:\t", y*y*math.Pi)
+	var x float64
+	x = util.Number("Введите x")
+	fmt.Println("значение функции y:\t", 3*math.Pow(x, 6)-6*math.Pow(x, 2)-7)
 }
