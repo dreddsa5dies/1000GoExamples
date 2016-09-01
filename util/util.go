@@ -17,6 +17,17 @@ func Number(msg string) float64 {
 	return num
 }
 
+// Integer ввод числа в stdin
+func Integer(msg string) int {
+	fmt.Print(msg + " > ")
+	var num int
+	_, err := fmt.Scanf("%d", &num)
+	if err != nil {
+		panic("Ввод неверных данных")
+	}
+	return num
+}
+
 // NoNNumber ввод неотрицательного числа в stdin
 func NoNNumber(msg string) float64 {
 	fmt.Print(msg + " > ")
