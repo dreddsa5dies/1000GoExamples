@@ -17,10 +17,21 @@ func Number(msg string) float64 {
 	return num
 }
 
-// Integer ввод числа в stdin
+// Integer ввод целого числа в stdin
 func Integer(msg string) int {
 	fmt.Print(msg + " > ")
 	var num int
+	_, err := fmt.Scanf("%d", &num)
+	if err != nil {
+		panic("Ввод неверных данных")
+	}
+	return num
+}
+
+// UInteger ввод целого неотрицательного числа в stdin
+func UInteger(msg string) uint {
+	fmt.Print(msg + " > ")
+	var num uint
 	_, err := fmt.Scanf("%d", &num)
 	if err != nil {
 		panic("Ввод неверных данных")
