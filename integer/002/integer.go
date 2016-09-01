@@ -1,7 +1,15 @@
+// Дана масса M в килограммах. Используя операцию деления нацело,
+// найти количество полных тонн в ней (1 тонна = 1000 кг)
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/dreddsa5dies/1000GoExamples/util"
+)
 
 func main() {
-	fmt.Println("Hello")
+	var x int
+	x = util.Integer("Введите массу M в килограммах")
+	fmt.Printf("количество полных тонн: %v (т)\n", x/1000)
 }
