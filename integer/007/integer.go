@@ -1,7 +1,17 @@
+// Дано двузначное число. Найти сумму и произведение его цифр
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/dreddsa5dies/1000GoExamples/util"
+)
 
 func main() {
-	fmt.Println("Hello")
+	var x uint
+	for x < 10 || x > 100 {
+		x = util.UInteger("Введите двузначное число A")
+	}
+	fmt.Printf("сумма его цифр: %v\n", x/10+x%10)
+	fmt.Printf("произведение его цифр: %v\n", (x/10)*(x%10))
 }
