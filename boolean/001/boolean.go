@@ -11,9 +11,5 @@ import (
 func main() {
 	var x int
 	x = util.Integer("целое число A")
-	if x < 0 {
-		fmt.Printf("Число %v является отрицательным\n", x)
-	} else {
-		fmt.Printf("Число %v является положительным\n", x)
-	}
+	fmt.Println(x > 0)
 }

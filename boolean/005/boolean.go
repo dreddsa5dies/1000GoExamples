@@ -12,9 +12,5 @@ func main() {
 	var a, b int
 	a = util.Integer("целое число A")
 	b = util.Integer("целое число B")
-	if a >= 0 && b < -2 {
-		fmt.Printf("неравенства A ≥ 0 или B < –2 справедливы\n")
-	} else {
-		fmt.Printf("неравенства A ≥ 0 или B < –2 несправедливы\n")
-	}
+	fmt.Println(a >= 0 || b < -2)
 }

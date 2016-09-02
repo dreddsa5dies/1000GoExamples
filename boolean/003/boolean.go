@@ -11,9 +11,5 @@ import (
 func main() {
 	var x int
 	x = util.Integer("целое число A")
-	if x%2 == 0 {
-		fmt.Printf("Число %v является четным\n", x)
-	} else {
-		fmt.Printf("Число %v является нечетным\n", x)
-	}
+	fmt.Println(x%2 == 0)
 }
