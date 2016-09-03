@@ -1,0 +1,17 @@
+//Дано целое положительное число. Проверить истинность высказы-
+// вания: «Данное число является нечетным трехзначным»
+package main
+
+import (
+	"fmt"
+
+	"github.com/dreddsa5dies/1000GoExamples/util"
+)
+
+func main() {
+	var a uint
+	var x bool
+	a = util.UInteger("целое положительное число A")
+	x = ((99 < a) && (a < 1000)) && (a%2 != 0)
+	fmt.Println(x)
+}
