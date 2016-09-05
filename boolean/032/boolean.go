@@ -10,11 +10,11 @@ import (
 )
 
 func main() {
-	var a, b, c int
+	var a, b, c uint
 	var x bool
-	a = util.Integer("число a")
-	b = util.Integer("число b")
-	c = util.Integer("число c")
+	a = util.UInteger("число a")
+	b = util.UInteger("число b")
+	c = util.UInteger("число c")
 	x = (c*c == (a*a + b*b)) || (a*a == (c*c + b*b)) || (b*b == (a*a + c*c))
 	fmt.Println(x)
 }
