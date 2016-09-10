@@ -18,12 +18,17 @@ func main() {
 		x = util.UInteger("M (месяц)")
 	}
 
-	if x == 2 {
-		for y < 1 || y > 28 {
+	switch {
+	case x == 1 || x == 3 || x == 5 || x == 7 || x == 8 || x == 10 || x == 12:
+		for y < 1 || y > 31 {
 			y = util.UInteger("D (день)")
 		}
-	} else {
-		for y < 1 || y > 31 {
+	case x == 4 || x == 6 || x == 9 || x == 11:
+		for y < 1 || y > 30 {
+			y = util.UInteger("D (день)")
+		}
+	case x == 2:
+		for y < 1 || y > 28 {
 			y = util.UInteger("D (день)")
 		}
 	}
