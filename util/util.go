@@ -118,3 +118,14 @@ func ModNumber(num float64) float64 {
 	}
 	return num
 }
+
+// Symbol ввод string в stdin
+func Symbol(msg string) string {
+	fmt.Print(msg + " > ")
+	var str string
+	_, err := fmt.Scanf("%s", &str)
+	if err != nil {
+		panic("Ввод неверных данных")
+	}
+	return str
+}

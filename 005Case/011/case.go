@@ -27,7 +27,7 @@ func main() {
 	}
 
 	switch {
-	case s == "С": // север
+	case s == "З": // север
 		switch {
 		case y == -1:
 			fmt.Println("запад")
@@ -63,5 +63,7 @@ func main() {
 		case y == 1:
 			fmt.Println("юг")
 		}
+	default:
+		fmt.Println("беда")
 	}
 }
