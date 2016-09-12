@@ -18,15 +18,123 @@ func main() {
 		m = ioutil.Integer("месяц")
 	}
 
-	for n < 1 || n > 31 {
-		m = ioutil.Integer("день")
+	if m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12 {
+		for n < 1 || n > 31 {
+			n = ioutil.Integer("день")
+		}
+	} else if m == 4 || m == 6 || m == 9 || m == 11 {
+		for n < 1 || n > 30 {
+			n = ioutil.Integer("день")
+		}
+	} else if m == 2 {
+		for n < 1 || n > 28 {
+			n = ioutil.Integer("день")
+		}
 	}
 
 	fmt.Printf("%s\n", printZodiac(m, n))
 }
 
 func printZodiac(m, n int) string {
-	var w string
-	w = "Водолей"
-	return w
+	var x int
+	w := [...]string{1: "Водолей",
+		2:  "Рыбы",
+		3:  "Овен",
+		4:  "Телец",
+		5:  "Близнецы",
+		6:  "Рак",
+		7:  "Лев",
+		8:  "Дева",
+		9:  "Весы",
+		10: "Скорпион",
+		11: "Стрелец",
+		12: "Козерог"}
+
+	switch {
+	case m == 1:
+		switch {
+		case n >= 20:
+			x = 1
+		case n < 20:
+			x = 12
+		}
+	case m == 2:
+		switch {
+		case n <= 18:
+			x = m - 1
+		case n > 18:
+			x = m
+		}
+	case m == 3:
+		switch {
+		case n <= 20:
+			x = m - 1
+		case n > 20:
+			x = m
+		}
+	case m == 4:
+		switch {
+		case n <= 19:
+			x = m - 1
+		case n > 19:
+			x = m
+		}
+	case m == 5:
+		switch {
+		case n <= 20:
+			x = m - 1
+		case n > 20:
+			x = m
+		}
+	case m == 6:
+		switch {
+		case n <= 21:
+			x = m - 1
+		case n > 21:
+			x = m
+		}
+	case m == 7:
+		switch {
+		case n <= 22:
+			x = m - 1
+		case n > 22:
+			x = m
+		}
+	case m == 8:
+		switch {
+		case n <= 22:
+			x = m - 1
+		case n > 22:
+			x = m
+		}
+	case m == 9:
+		switch {
+		case n <= 22:
+			x = m - 1
+		case n > 22:
+			x = m
+		}
+	case m == 10:
+		switch {
+		case n <= 22:
+			x = m - 1
+		case n > 22:
+			x = m
+		}
+	case m == 11:
+		switch {
+		case n <= 22:
+			x = m - 1
+		case n > 22:
+			x = m
+		}
+	case m == 12:
+		switch {
+		case n <= 22:
+			x = m - 1
+		case n > 22:
+			x = m
+		}
+	}
+	return w[x]
 }
