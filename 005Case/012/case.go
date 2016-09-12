@@ -30,27 +30,27 @@ func main() {
 		d := 2 * y
 		l := 2 * pi * y
 		s := pi * math.Pow(y, 2)
-		fmt.Printf("Радиус: %v, диаметр:: %v, длина:: %v, площадь:: %v\n", y, d, l, s)
+		fmt.Printf("Радиус: %v, диаметр: %v, длина: %v, площадь: %v\n", y, d, l, s)
 	case x == 2: // диаметр
 		fmt.Println("диаметр")
 		d := util.Number("Значение")
 		y = d / 2
 		l := 2 * pi * y
 		s := pi * math.Pow(y, 2)
-		fmt.Printf("Радиус: %v, диаметр:: %v, длина:: %v, площадь:: %v\n", y, d, l, s)
+		fmt.Printf("Радиус: %v, диаметр: %v, длина: %v, площадь: %v\n", y, d, l, s)
 	case x == 3: // длина
 		fmt.Println("длина")
 		l := util.Number("Значение")
 		y = l / (2 * pi)
 		d := 2 * y
 		s := pi * math.Pow(y, 2)
-		fmt.Printf("Радиус: %v, диаметр:: %v, длина:: %v, площадь:: %v\n", y, d, l, s)
+		fmt.Printf("Радиус: %v, диаметр: %v, длина: %v, площадь: %v\n", y, d, l, s)
 	case x == 4: // площадь круга
 		fmt.Println("площадь круга")
 		s := util.Number("Значение")
 		y = math.Sqrt(s / pi)
 		d := 2 * y
 		l := 2 * pi * y
-		fmt.Printf("Радиус: %v, диаметр:: %v, длина:: %v, площадь:: %v\n", y, d, l, s)
+		fmt.Printf("Радиус: %v, диаметр: %v, длина: %v, площадь: %v\n", y, d, l, s)
 	}
 }
