@@ -14,17 +14,77 @@ import (
 
 func main() {
 	var m int
-
-	for m < 100 || m > 999 {
-		m = ioutil.Integer("число")
+	for m < 1 {
+		m = ioutil.Integer("год")
 	}
 
-	printChinaYear(m)
+	fmt.Printf("%s\n", printChinaYear(m))
 }
 
-func printChinaYear(m int) {
-	var w1, w2, w3 string
-	w1 = "год"
+func printChinaYear(m int) string {
+	var w2, w3 string
+	const (
+		loop      = 60
+		pointLoop = 1984
+		w1        = "год "
+	)
 
-	fmt.Printf("%v %v %v\n", w1, w2, w3)
+	// год от начала цикла
+	x := (pointLoop - ((pointLoop-m)/loop)*loop) - m
+	if x < 0 {
+		x = -x
+	}
+
+	switch {
+	case x >= 0 || x < 12:
+		w2 += "зелен"
+	case x >= 12 || x < 24:
+		w2 += "красн"
+	case x >= 24 || x < 36:
+		w2 += "желт"
+	case x >= 36 || x < 48:
+		w2 += "бел"
+	case x >= 48 || x < 60:
+		w2 += "черн"
+	}
+
+	switch {
+	case x%12 == 0:
+		w3 = "крысы"
+		w2 += "ой "
+	case x%12 == 1:
+		w3 = "коровы"
+		w2 += "ой "
+	case x%12 == 2:
+		w3 = "тигра"
+		w2 += "ого "
+	case x%12 == 3:
+		w3 = "зайца"
+		w2 += "ого "
+	case x%12 == 4:
+		w3 = "дракона"
+		w2 += "ого "
+	case x%12 == 5:
+		w3 = "змеи"
+		w2 += "ой "
+	case x%12 == 6:
+		w3 = "лошади"
+		w2 += "ой "
+	case x%12 == 7:
+		w3 = "овцы"
+		w2 += "ой "
+	case x%12 == 8:
+		w3 = "обезьяны"
+		w2 += "ой "
+	case x%12 == 9:
+		w3 = "курицы"
+		w2 += "ой "
+	case x%12 == 10:
+		w3 = "собаки"
+		w2 += "ой "
+	case x%12 == 11:
+		w3 = "свиньи"
+		w2 += "ой "
+	}
+	return w1 + w2 + w3
 }
