@@ -3,13 +3,17 @@ package main
 import "testing"
 
 func TestPrintInt(t *testing.T) {
-	var v string
-	v = printChinaYear(1984)
-	if v != "год зеленой крысы" {
-		t.Error(`printChinaYear(1984) = false`)
+	var tests = []struct {
+		input int
+		want  string
+	}{
+		{1984, "год зеленой крысы"},
+		{1986, "год зеленого тигра"},
+		{1900, "год зеленой крысы"},
 	}
-	v = printChinaYear(1986)
-	if v != "год зеленого тигра" {
-		t.Error(`printChinaYear(1984) = false`)
+	for _, test := range tests {
+		if got := printChinaYear(test.input); got != test.want {
+			t.Errorf("printChinaYear(%v) = %v", test.input, got)
+		}
 	}
 }
