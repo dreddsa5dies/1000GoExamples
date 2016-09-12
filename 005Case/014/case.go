@@ -17,7 +17,6 @@ func main() {
 		x int
 		y float64
 	)
-	const pi = math.Pi
 
 	for x < 1 || x > 4 {
 		x = util.Integer("Номер")
