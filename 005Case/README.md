@@ -1,2 +1,2 @@
 Оператор выбора: группа Case
-Golang: swith
+Golang: switch
