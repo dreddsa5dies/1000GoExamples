@@ -9,6 +9,9 @@ func TestPrintInt(t *testing.T) {
 		want   string
 	}{
 		{21, 1, "Водолей"},
+		{20, 2, "Рыбы"},
+		{22, 3, "Овен"},
+		{24, 4, "Телец"},
 	}
 	for _, test := range tests {
 		if got := printZodiac(test.inputD, test.inputM); got != test.want {
