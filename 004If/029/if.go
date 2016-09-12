@@ -5,13 +5,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x int
 	var s []string
-	x = util.Integer("целое число")
+	x = ioutil.Integer("целое число")
 
 	if x == 0 {
 		s = append(s, "нулевое ")

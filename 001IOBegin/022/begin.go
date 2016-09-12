@@ -5,13 +5,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y float64
-	x = util.Number("Введите A")
-	y = util.Number("Введите B")
+	x = ioutil.Number("Введите A")
+	y = ioutil.Number("Введите B")
 	x = x + y
 	y = x - y
 	x = x - y

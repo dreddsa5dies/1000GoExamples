@@ -4,13 +4,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x float64
 	fmt.Println("Необходимо найти объем куба и площадь его поверхности")
-	x = util.Number("Введите значение длины ребра куба")
+	x = ioutil.Number("Введите значение длины ребра куба")
 	fmt.Println("Объем равен:\t", x*x*x)
 	fmt.Println("Площадь равна:\t", 6*x*x)
 }

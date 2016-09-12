@@ -1,5 +1,5 @@
-// Package util утилиты для решения задач
-package util
+// Package ioutil утилиты для решения задач
+package ioutil
 
 import (
 	"fmt"

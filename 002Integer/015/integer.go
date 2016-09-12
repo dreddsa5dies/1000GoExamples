@@ -6,13 +6,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x uint
 	for x < 100 || x > 1000 {
-		x = util.UInteger("Введите трехзначное число A")
+		x = ioutil.UInteger("Введите трехзначное число A")
 	}
 	fmt.Printf("полученное число: %v\n", 100*((x-(100*(x/100)))/10)+10*(x/100)+x%10)
 }

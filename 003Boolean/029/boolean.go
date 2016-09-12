@@ -7,18 +7,18 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y, x1, x2, y1, y2 float64
 	var a, b bool
-	x = util.Number("число x")
-	y = util.Number("число y")
-	x1 = util.Number("число x1")
-	y1 = util.Number("число y1")
-	x2 = util.Number("число x2")
-	y2 = util.Number("число y2")
+	x = ioutil.Number("число x")
+	y = ioutil.Number("число y")
+	x1 = ioutil.Number("число x1")
+	y1 = ioutil.Number("число y1")
+	x2 = ioutil.Number("число x2")
+	y2 = ioutil.Number("число y2")
 	a = ((x < x1) || (x < x2)) && ((x > x1) || (x > x2))
 	b = ((y < y1) || (y < y2)) && ((y > y1) || (y > y2))
 	fmt.Println(a && b)

@@ -7,15 +7,15 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y uint
 	y = x - 1
-	x = util.UInteger("Введите положительное число A")
+	x = ioutil.UInteger("Введите положительное число A")
 	for y > x {
-		y = util.UInteger("Введите положительное число B ( A > B )")
+		y = ioutil.UInteger("Введите положительное число B ( A > B )")
 	}
 	fmt.Printf("количество отрезков B, размещенных на отрезке A: %v\n", x/y)
 }

@@ -6,11 +6,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x int
-	x = util.Integer("Введите размер файла в байтах")
+	x = ioutil.Integer("Введите размер файла в байтах")
 	fmt.Printf("количество полных килобайтов: %v (kb)\n", x/1024)
 }

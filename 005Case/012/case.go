@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
@@ -20,34 +20,34 @@ func main() {
 	const pi = math.Pi
 
 	for x < 1 || x > 4 {
-		x = util.Integer("Номер")
+		x = ioutil.Integer("Номер")
 	}
 
 	switch {
 	case x == 1: // радиус
 		fmt.Println("радиус")
-		y = util.Number("Значение")
+		y = ioutil.Number("Значение")
 		d := 2 * y
 		l := 2 * pi * y
 		s := pi * math.Pow(y, 2)
 		fmt.Printf("Радиус: %v, диаметр: %v, длина: %v, площадь: %v\n", y, d, l, s)
 	case x == 2: // диаметр
 		fmt.Println("диаметр")
-		d := util.Number("Значение")
+		d := ioutil.Number("Значение")
 		y = d / 2
 		l := 2 * pi * y
 		s := pi * math.Pow(y, 2)
 		fmt.Printf("Радиус: %v, диаметр: %v, длина: %v, площадь: %v\n", y, d, l, s)
 	case x == 3: // длина
 		fmt.Println("длина")
-		l := util.Number("Значение")
+		l := ioutil.Number("Значение")
 		y = l / (2 * pi)
 		d := 2 * y
 		s := pi * math.Pow(y, 2)
 		fmt.Printf("Радиус: %v, диаметр: %v, длина: %v, площадь: %v\n", y, d, l, s)
 	case x == 4: // площадь круга
 		fmt.Println("площадь круга")
-		s := util.Number("Значение")
+		s := ioutil.Number("Значение")
 		y = math.Sqrt(s / pi)
 		d := 2 * y
 		l := 2 * pi * y

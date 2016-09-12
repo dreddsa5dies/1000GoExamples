@@ -4,14 +4,14 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y float64
 	fmt.Println("Необходимо найти площадь и периметр прямоугольника")
-	x = util.Number("Введите значение стороны 1")
-	y = util.Number("Введите значение стороны 2")
+	x = ioutil.Number("Введите значение стороны 1")
+	y = ioutil.Number("Введите значение стороны 2")
 	fmt.Println("Площадь равна:\t", x*y)
 	fmt.Println("Периметр равен:\t", 2*(x+y))
 }

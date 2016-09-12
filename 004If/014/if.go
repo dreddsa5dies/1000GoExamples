@@ -5,14 +5,14 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y, z int
-	x = util.Integer("число x")
-	y = util.Integer("число y")
-	z = util.Integer("число z")
+	x = ioutil.Integer("число x")
+	y = ioutil.Integer("число y")
+	z = ioutil.Integer("число z")
 	if x < y && x < z {
 		fmt.Printf("наименьшее: %v\n", x)
 		if y > z {

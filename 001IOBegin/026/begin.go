@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x float64
-	x = util.Number("Введите x")
+	x = ioutil.Number("Введите x")
 	fmt.Println("значение функции y:\t", 4*math.Pow((x-3), 6)-7*math.Pow((x-3), 2)+2)
 }

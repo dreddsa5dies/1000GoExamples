@@ -5,12 +5,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var a, b int
-	a = util.Integer("целое число A")
-	b = util.Integer("целое число B")
+	a = ioutil.Integer("целое число A")
+	b = ioutil.Integer("целое число B")
 	fmt.Println(a%2 != 0 && b%2 != 0)
 }

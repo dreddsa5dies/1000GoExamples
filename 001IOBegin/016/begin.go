@@ -5,12 +5,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y float64
-	x = util.Number("введите координату 1")
-	y = util.Number("введите координату 1")
-	fmt.Println("расстояние:\t", util.ModNumber(x-y))
+	x = ioutil.Number("введите координату 1")
+	y = ioutil.Number("введите координату 1")
+	fmt.Println("расстояние:\t", ioutil.ModNumber(x-y))
 }

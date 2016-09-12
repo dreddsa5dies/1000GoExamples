@@ -9,12 +9,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, f uint
-	x = util.UInteger("номер года (положительное целое число)")
+	x = ioutil.UInteger("номер года (положительное целое число)")
 
 	if x%4 == 0 {
 		if x%100 == 0 && x%400 != 0 {

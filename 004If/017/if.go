@@ -7,14 +7,14 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y, z float64
-	x = util.Number("число A")
-	y = util.Number("число B")
-	z = util.Number("число C")
+	x = ioutil.Number("число A")
+	y = ioutil.Number("число B")
+	z = ioutil.Number("число C")
 	if x < y && y < z {
 		x = 2 * x
 		y = 2 * y

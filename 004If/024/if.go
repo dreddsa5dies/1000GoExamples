@@ -9,12 +9,12 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, f float64
-	x = util.Number("x")
+	x = ioutil.Number("x")
 
 	if x > 0 {
 		f = 2 * math.Sin(x)

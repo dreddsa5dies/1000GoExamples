@@ -6,12 +6,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y, z float64
-	x = util.Number("Введите A")
+	x = ioutil.Number("Введите A")
 	y = x * x
 	fmt.Println("A^2:\t", y)
 	z = y * x

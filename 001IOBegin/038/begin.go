@@ -5,14 +5,14 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y float64
 	fmt.Println("A·x + B = 0")
-	x = util.NotNullNumber("Введите A")
-	y = util.Number("Введите B")
+	x = ioutil.NotNullNumber("Введите A")
+	y = ioutil.Number("Введите B")
 	z := (0 - y) / x
 	fmt.Println("x = ", z)
 }

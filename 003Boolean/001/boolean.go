@@ -5,11 +5,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x int
-	x = util.Integer("целое число A")
+	x = ioutil.Integer("целое число A")
 	fmt.Println(x > 0)
 }

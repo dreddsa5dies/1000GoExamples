@@ -8,13 +8,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y float64
-	x = util.NoNNumber("Введите расстояние между автомобилями")
-	y = util.NoNNumber("Введите время езды")
+	x = ioutil.NoNNumber("Введите расстояние между автомобилями")
+	y = ioutil.NoNNumber("Введите время езды")
 	s := x + (y * 3)
 	fmt.Printf("расстояние между ними через %v (ч): %v км\n", y, s)
 }

@@ -6,13 +6,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var a uint
 	for a == 0 {
-		a = util.UInteger("номер некоторого года (целое положительное число)")
+		a = ioutil.UInteger("номер некоторого года (целое положительное число)")
 	}
 	if a%10 == 0 {
 		a--

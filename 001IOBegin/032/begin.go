@@ -7,11 +7,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x float64
-	x = util.Number("Введите температуру T в градусах Цельсия")
+	x = ioutil.Number("Введите температуру T в градусах Цельсия")
 	fmt.Println("Температура по Фаренгейту:\t", (x-32)*5/9)
 }

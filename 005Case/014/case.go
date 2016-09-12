@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
@@ -19,34 +19,34 @@ func main() {
 	)
 
 	for x < 1 || x > 4 {
-		x = util.Integer("Номер")
+		x = ioutil.Integer("Номер")
 	}
 
 	switch {
 	case x == 1: // сторона
 		fmt.Println("сторона")
-		y = util.Number("Значение")
+		y = ioutil.Number("Значение")
 		r1 := (y * math.Sqrt(3)) / 6
 		r2 := 2 * r1
 		s := (math.Pow(y, 2) * math.Sqrt(3)) / 4
 		fmt.Printf("сторона: %v, радиус R1: %v, радиус R2: %v, площадь: %v\n", y, r1, r2, s)
 	case x == 2: // радиус R1
 		fmt.Println("радиус R1")
-		r1 := util.Number("Значение")
+		r1 := ioutil.Number("Значение")
 		y = (r1 * 6) / math.Sqrt(3)
 		r2 := 2 * r1
 		s := (math.Pow(y, 2) * math.Sqrt(3)) / 4
 		fmt.Printf("сторона: %v, радиус R1: %v, радиус R2: %v, площадь: %v\n", y, r1, r2, s)
 	case x == 3: // радиус R2
 		fmt.Println("радиус R2")
-		r2 := util.Number("Значение")
+		r2 := ioutil.Number("Значение")
 		r1 := r2 / 2
 		y = (r1 * 6) / math.Sqrt(3)
 		s := (math.Pow(y, 2) * math.Sqrt(3)) / 4
 		fmt.Printf("сторона: %v, радиус R1: %v, радиус R2: %v, площадь: %v\n", y, r1, r2, s)
 	case x == 4: // площадь
 		fmt.Println("площадь")
-		s := util.Number("Значение")
+		s := ioutil.Number("Значение")
 		y = math.Sqrt(((s * 4) / math.Sqrt(3)))
 		r1 := (y * math.Sqrt(3)) / 6
 		r2 := 2 * r1

@@ -10,15 +10,15 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y, z, x1, x2, d float64
 	fmt.Println("A·x^2 + B·x + C = 0")
-	x = util.NotNullNumber("Введите A")
-	y = util.Number("Введите B")
-	z = util.Number("Введите C")
+	x = ioutil.NotNullNumber("Введите A")
+	y = ioutil.Number("Введите B")
+	z = ioutil.Number("Введите C")
 	d = math.Pow(y, 2) - 4*x*z
 	x1 = (-y + d) / (2 * x)
 	x2 = (-y - d) / (2 * x)

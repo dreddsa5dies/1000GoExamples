@@ -8,18 +8,18 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y, z uint
 	for x < 1 || x > 4 {
-		x = util.UInteger("действие")
+		x = ioutil.UInteger("действие")
 	}
 
-	z = util.UInteger("A")
+	z = ioutil.UInteger("A")
 	for y == 0 {
-		y = util.UInteger("B")
+		y = ioutil.UInteger("B")
 	}
 
 	switch {

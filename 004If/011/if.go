@@ -7,13 +7,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y int
-	x = util.Integer("число A")
-	y = util.Integer("число B")
+	x = ioutil.Integer("число A")
+	y = ioutil.Integer("число B")
 	if x == y {
 		x = 0
 		y = x

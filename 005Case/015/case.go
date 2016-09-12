@@ -9,7 +9,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
@@ -19,10 +19,10 @@ func main() {
 	)
 
 	for m < 1 || m > 4 {
-		m = util.UInteger("масть")
+		m = ioutil.UInteger("масть")
 	}
 	for n <= 6 || n >= 14 {
-		n = util.UInteger("достоинство")
+		n = ioutil.UInteger("достоинство")
 	}
 
 	switch {

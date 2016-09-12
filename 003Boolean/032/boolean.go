@@ -6,15 +6,15 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var a, b, c uint
 	var x bool
-	a = util.UInteger("число a")
-	b = util.UInteger("число b")
-	c = util.UInteger("число c")
+	a = ioutil.UInteger("число a")
+	b = ioutil.UInteger("число b")
+	c = ioutil.UInteger("число c")
 	x = (c*c == (a*a + b*b)) || (a*a == (c*c + b*b)) || (b*b == (a*a + c*c))
 	fmt.Println(x)
 }

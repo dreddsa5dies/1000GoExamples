@@ -6,14 +6,14 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var a int
 	var x, y bool
 	for a > 999 || a < 100 {
-		a = util.Integer("целое трехзначное число A")
+		a = ioutil.Integer("целое трехзначное число A")
 	}
 	x = (a/100) < ((a-(100*(a/100)))/10) && ((a-(100*(a/100)))/10) < (a%10)
 	y = (a/100) > ((a-(100*(a/100)))/10) && ((a-(100*(a/100)))/10) > (a%10)

@@ -7,13 +7,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x uint
 	for x == 0 || x > 365 || x < 1 {
-		x = util.UInteger("введите K, лежащее в диапазоне 1–365")
+		x = ioutil.UInteger("введите K, лежащее в диапазоне 1–365")
 	}
 	x = x % 7
 	fmt.Printf("номер дня недели для K-го дня года: %v\n", x)

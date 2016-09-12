@@ -6,25 +6,25 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x1, x2, y1, y2 int
 	var a, b bool
 	for x1 < 1 || x1 > 8 {
-		x1 = util.Integer("число x1")
+		x1 = ioutil.Integer("число x1")
 	}
 	for y1 < 1 || y1 > 8 {
-		y1 = util.Integer("число y1")
+		y1 = ioutil.Integer("число y1")
 	}
 	for x2 < 1 || x2 > 8 {
-		x2 = util.Integer("число x2")
+		x2 = ioutil.Integer("число x2")
 	}
 	for y2 < 1 || y2 > 8 {
-		y2 = util.Integer("число y2")
+		y2 = ioutil.Integer("число y2")
 	}
-	a = util.ModNumber(float64(x2-x1)) == util.ModNumber(float64(y2-y1))
+	a = ioutil.ModNumber(float64(x2-x1)) == ioutil.ModNumber(float64(y2-y1))
 	b = (x1 == x2) || (y1 == y2)
 	fmt.Println(a || b)
 }

@@ -8,12 +8,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, f float64
-	x = util.Number("x")
+	x = ioutil.Number("x")
 
 	if x < -2 || x > 2 {
 		f = 2 * x

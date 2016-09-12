@@ -10,17 +10,17 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x1, y1, x2, y2, x3, y3 float64
-	x1 = util.Number("Введите координату х1")
-	y1 = util.Number("Введите координату y1")
-	x2 = util.Number("Введите координату х2")
-	y2 = util.Number("Введите координату y2")
-	x3 = util.Number("Введите координату х3")
-	y3 = util.Number("Введите координату y3")
+	x1 = ioutil.Number("Введите координату х1")
+	y1 = ioutil.Number("Введите координату y1")
+	x2 = ioutil.Number("Введите координату х2")
+	y2 = ioutil.Number("Введите координату y2")
+	x3 = ioutil.Number("Введите координату х3")
+	y3 = ioutil.Number("Введите координату y3")
 	z1 := math.Sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1)) // между 1 и 2 точками
 	fmt.Printf("расстояние между 1 и 2 точками\t: %v\n", z1)
 	z2 := math.Sqrt((x3-x1)*(x3-x1) + (y3-y1)*(y3-y1)) // между 1 и 3 точками

@@ -7,17 +7,17 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y uint
 	var a bool
 	for x < 1 || x > 8 {
-		x = util.UInteger("число x")
+		x = ioutil.UInteger("число x")
 	}
 	for y < 1 || y > 8 {
-		y = util.UInteger("число y")
+		y = ioutil.UInteger("число y")
 	}
 	a = ((x%2 == 0) && (y%2 == 0)) || ((x%2 != 0) && (y%2 != 0))
 	fmt.Println(!a)

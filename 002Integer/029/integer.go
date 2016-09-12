@@ -7,19 +7,19 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var a, b, c uint
 	for a == 0 {
-		a = util.UInteger("целое положительное число A")
+		a = ioutil.UInteger("целое положительное число A")
 	}
 	for b == 0 {
-		b = util.UInteger("целое положительное число B")
+		b = ioutil.UInteger("целое положительное число B")
 	}
 	for c == 0 {
-		c = util.UInteger("целое положительное число C")
+		c = ioutil.UInteger("целое положительное число C")
 	}
 	x := (b / c) * (a / c)
 	s := (a%c)*b + (b%c)*a - ((b % c) * (a % c))

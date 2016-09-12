@@ -6,7 +6,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
@@ -15,21 +15,21 @@ func main() {
 	)
 
 	for x < 1 || x > 12 {
-		x = util.UInteger("M (месяц)")
+		x = ioutil.UInteger("M (месяц)")
 	}
 
 	switch {
 	case x == 1 || x == 3 || x == 5 || x == 7 || x == 8 || x == 10 || x == 12:
 		for y < 1 || y > 31 {
-			y = util.UInteger("D (день)")
+			y = ioutil.UInteger("D (день)")
 		}
 	case x == 4 || x == 6 || x == 9 || x == 11:
 		for y < 1 || y > 30 {
-			y = util.UInteger("D (день)")
+			y = ioutil.UInteger("D (день)")
 		}
 	case x == 2:
 		for y < 1 || y > 28 {
-			y = util.UInteger("D (день)")
+			y = ioutil.UInteger("D (день)")
 		}
 	}
 

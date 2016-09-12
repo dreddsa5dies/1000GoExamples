@@ -7,11 +7,11 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x float64
-	x = util.GrNumber("Введите значение угла α в градусах (0 < α < 360)")
+	x = ioutil.GrNumber("Введите значение угла α в градусах (0 < α < 360)")
 	fmt.Println("значение угла в радианах:\t", x*math.Pi/180)
 }

@@ -6,16 +6,16 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y, z, d int
 	fmt.Println("четыре целых числа, одно из которых отлично от трех других, равных между собой")
-	x = util.Integer("число A")
-	y = util.Integer("число B")
-	z = util.Integer("число C")
-	d = util.Integer("число D")
+	x = ioutil.Integer("число A")
+	y = ioutil.Integer("число B")
+	z = ioutil.Integer("число C")
+	d = ioutil.Integer("число D")
 
 	if x == y && y == z && z == d {
 		panic("все равны\n")

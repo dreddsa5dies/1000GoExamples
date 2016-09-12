@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
@@ -19,34 +19,34 @@ func main() {
 	)
 
 	for x < 1 || x > 4 {
-		x = util.Integer("Номер")
+		x = ioutil.Integer("Номер")
 	}
 
 	switch {
 	case x == 1: // катет
 		fmt.Println("катет")
-		y = util.Number("Значение")
+		y = ioutil.Number("Значение")
 		c := y * math.Sqrt(2)
 		h := c / 2
 		s := c * h / 2
 		fmt.Printf("катет: %v, гипотенуза: %v, высота: %v, площадь: %v\n", y, c, h, s)
 	case x == 2: // гипотенуза
 		fmt.Println("гипотенуза")
-		c := util.Number("Значение")
+		c := ioutil.Number("Значение")
 		y = c / math.Sqrt(2)
 		h := c / 2
 		s := c * h / 2
 		fmt.Printf("катет: %v, гипотенуза: %v, высота: %v, площадь: %v\n", y, c, h, s)
 	case x == 3: // высота
 		fmt.Println("высота")
-		h := util.Number("Значение")
+		h := ioutil.Number("Значение")
 		c := h * 2
 		y = c / math.Sqrt(2)
 		s := c * h / 2
 		fmt.Printf("катет: %v, гипотенуза: %v, высота: %v, площадь: %v\n", y, c, h, s)
 	case x == 4: // площадь
 		fmt.Println("площадь")
-		s := util.Number("Значение")
+		s := ioutil.Number("Значение")
 		h := math.Sqrt(s)
 		c := 2 * h
 		y = c / math.Sqrt(2)

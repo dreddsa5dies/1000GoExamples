@@ -4,13 +4,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y int
-	x = util.Integer("число x")
-	y = util.Integer("число y")
+	x = ioutil.Integer("число x")
+	y = ioutil.Integer("число y")
 	if x > y {
 		fmt.Printf("большее число: %v\n", x)
 	} else {

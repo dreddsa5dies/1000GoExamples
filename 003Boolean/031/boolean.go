@@ -6,15 +6,15 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var a, b, c int
 	var x bool
-	a = util.Integer("число a")
-	b = util.Integer("число b")
-	c = util.Integer("число c")
+	a = ioutil.Integer("число a")
+	b = ioutil.Integer("число b")
+	c = ioutil.Integer("число c")
 	x = a == b || a == c || b == c
 	fmt.Println(x)
 }

@@ -5,15 +5,15 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var n, m, l int
 	var x []int
-	n = util.Integer("количество чисел")
+	n = ioutil.Integer("количество чисел")
 	for i := 0; i < n; i++ {
-		x = append(x, util.Integer("число"))
+		x = append(x, ioutil.Integer("число"))
 	}
 	for _, v := range x {
 		if v > 0 {

@@ -11,18 +11,18 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var a1, a2, b1, b2, c1, c2, d, x, y float64
 	fmt.Println("\tA1 · x + B1 · y = C1\n\tA2 · x + B2 · y = C2")
-	a1 = util.Number("Введите A1")
-	b1 = util.Number("Введите B1")
-	c1 = util.Number("Введите C1")
-	a2 = util.Number("Введите A2")
-	b2 = util.Number("Введите B2")
-	c2 = util.Number("Введите C2")
+	a1 = ioutil.Number("Введите A1")
+	b1 = ioutil.Number("Введите B1")
+	c1 = ioutil.Number("Введите C1")
+	a2 = ioutil.Number("Введите A2")
+	b2 = ioutil.Number("Введите B2")
+	c2 = ioutil.Number("Введите C2")
 	d = a1*b2 - a2*b1
 	x = (c1*b2 - c2*b1) / d
 	y = (a1*c2 - a2*c1) / d

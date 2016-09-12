@@ -11,19 +11,19 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y float64
 	fmt.Println("Необходимо найти площади кругов, кольца")
-	x = util.NotNullNumber("Введите радиус 1")
-	x = util.ModNumber(x)
-	y = util.NotNullNumber("Введите радиус 2")
-	y = util.ModNumber(y)
+	x = ioutil.NotNullNumber("Введите радиус 1")
+	x = ioutil.ModNumber(x)
+	y = ioutil.NotNullNumber("Введите радиус 2")
+	y = ioutil.ModNumber(y)
 	z1 := math.Pi * x * x
 	z2 := math.Pi * y * y
 	fmt.Println("Площадь круга 1:\t", z1)
 	fmt.Println("Площадь круга 2:\t", z2)
-	fmt.Println("Площадь кольца:\t\t", util.ModNumber(z1-z2))
+	fmt.Println("Площадь кольца:\t\t", ioutil.ModNumber(z1-z2))
 }

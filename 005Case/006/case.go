@@ -7,7 +7,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
@@ -17,10 +17,10 @@ func main() {
 	)
 
 	for x < 1 || x > 5 {
-		x = util.UInteger("номер единицы длины (целое число в диапазоне 1–5)")
+		x = ioutil.UInteger("номер единицы длины (целое число в диапазоне 1–5)")
 	}
 
-	y = util.NoNNumber("длина отрезка")
+	y = ioutil.NoNNumber("длина отрезка")
 
 	switch {
 	case x == 1:

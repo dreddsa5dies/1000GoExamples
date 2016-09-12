@@ -7,12 +7,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x int
-	x = util.Integer("число")
+	x = ioutil.Integer("число")
 
 	switch {
 	case x == 1:

@@ -9,7 +9,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
@@ -17,13 +17,13 @@ func main() {
 		s string
 		y int
 	)
-	s = util.Symbol("исходное направление робота")
+	s = ioutil.Symbol("исходное направление робота")
 
 	fmt.Println(s)
 
 	y = -2
 	for y < -1 || y > 1 {
-		y = util.Integer("команда")
+		y = ioutil.Integer("команда")
 	}
 
 	switch {

@@ -8,16 +8,16 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y uint
 	for x == 0 || x > 365 || x < 1 {
-		x = util.UInteger("введите K, лежащее в диапазоне 1–365")
+		x = ioutil.UInteger("введите K, лежащее в диапазоне 1–365")
 	}
 	for y == 0 || y > 7 || y < 1 {
-		y = util.UInteger("введите N, лежащее в диапазоне 1–7")
+		y = ioutil.UInteger("введите N, лежащее в диапазоне 1–7")
 	}
 	x = x % 7
 	z := x + y

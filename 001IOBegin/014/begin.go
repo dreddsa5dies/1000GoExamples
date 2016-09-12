@@ -7,13 +7,13 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y float64
 	const pi2 = 2 * math.Pi
-	x = util.NoNNumber("Введите длину окружности")
+	x = ioutil.NoNNumber("Введите длину окружности")
 	y = x / pi2
 	fmt.Println("Радиус круга:\t", y)
 	fmt.Println("Площадь круга:\t", y*y*math.Pi)

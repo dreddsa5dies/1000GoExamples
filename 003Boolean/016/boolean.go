@@ -5,13 +5,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var a int
 	var x bool
-	a = util.Integer("целое число A")
+	a = ioutil.Integer("целое число A")
 	x = ((9 < a) && (a < 99)) && (a%2 == 0)
 	fmt.Println(x)
 }

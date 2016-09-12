@@ -7,12 +7,12 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y float64
-	x = util.NoNNumber("введите площадь S круга")
+	x = ioutil.NoNNumber("введите площадь S круга")
 	y = math.Sqrt((4 * x) / math.Pi)
 	fmt.Println("диаметр круга:\t\t", y)
 	fmt.Println("длина L окружности:\t", y*math.Pi)

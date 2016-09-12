@@ -6,14 +6,14 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x uint
 	var s []string
 	for x < 1 || x > 999 {
-		x = util.UInteger("целое число, лежащее в диапазоне 1–999")
+		x = ioutil.UInteger("целое число, лежащее в диапазоне 1–999")
 	}
 
 	if x%2 == 0 {

@@ -7,13 +7,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y int
-	x = util.Integer("X")
-	y = util.Integer("Y")
+	x = ioutil.Integer("X")
+	y = ioutil.Integer("Y")
 
 	if x == 0 && y == 0 {
 		fmt.Printf(": %v\n", y)

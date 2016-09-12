@@ -8,12 +8,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y float64
-	x = util.NoNNumber("Введите скорость лодки в стоячей воде")
+	x = ioutil.NoNNumber("Введите скорость лодки в стоячей воде")
 	y = x + 1
 	for y > x || y < 0 {
 		fmt.Println("Введите скорость лодки по реке (против течения), меньшее скорости в стоячей воде")

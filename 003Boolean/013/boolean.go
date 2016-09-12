@@ -5,13 +5,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var a, b, c int
-	a = util.Integer("целое число A")
-	b = util.Integer("целое число B")
-	c = util.Integer("целое число C")
+	a = ioutil.Integer("целое число A")
+	b = ioutil.Integer("целое число B")
+	c = ioutil.Integer("целое число C")
 	fmt.Println(a > 0 || b > 0 || c > 0)
 }

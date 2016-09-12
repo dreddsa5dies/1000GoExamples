@@ -5,11 +5,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x int
-	x = util.Integer("Введите массу M в килограммах")
+	x = ioutil.Integer("Введите массу M в килограммах")
 	fmt.Printf("количество полных тонн: %v (т)\n", x/1000)
 }

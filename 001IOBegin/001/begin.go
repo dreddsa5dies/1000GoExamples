@@ -4,12 +4,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x float64
 	fmt.Println("Необходимо найти периметр квадрата")
-	x = util.Number("Введите значение стороны")
+	x = ioutil.Number("Введите значение стороны")
 	fmt.Println("Периметр равен:\t", 4*x)
 }

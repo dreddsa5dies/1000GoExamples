@@ -4,13 +4,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/dreddsa5dies/1000GoExamples/util"
+	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
 	var x, y float64
 	fmt.Println("Необходимо найти среднее арифметическое чисел")
-	x = util.Number("Введите число 1")
-	y = util.Number("Введите число 2")
+	x = ioutil.Number("Введите число 1")
+	y = ioutil.Number("Введите число 2")
 	fmt.Println("Среднее арифметическое чисел:\t", (x+y)/2)
 }
