@@ -7,8 +7,8 @@ func TestFoo1(t *testing.T) {
 		inputM int
 		want   int
 	}{
-		{2, 2.5},
-		{1, 2.0},
+		{2, 29},
+		{1, 5},
 	}
 	for _, test := range tests {
 		if got := foo1(test.inputM); got != test.want {
