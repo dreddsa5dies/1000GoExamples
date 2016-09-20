@@ -26,3 +26,15 @@ func TestFooN(t *testing.T) {
 		}
 	}
 }
+
+func BenchmarkFoo1(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		foo1(4)
+	}
+}
+
+func BenchmarkFoo2(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		foo2(4)
+	}
+}
