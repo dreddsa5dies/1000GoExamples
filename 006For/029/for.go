@@ -33,7 +33,11 @@ func main() {
 	x := foo1(n, a, b)
 	i := a
 	for i <= b {
-		fmt.Printf("%v\t", i)
+		if (b - i) > 0.0001 {
+			fmt.Printf("%v\t", i)
+		} else {
+			fmt.Printf("%v\t", b)
+		}
 		i = i + x
 	}
 	fmt.Println()
