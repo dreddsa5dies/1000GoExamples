@@ -36,8 +36,8 @@ func foo1(n int) {
 	a2 := 2.0
 	for i := 3; i <= n; i++ {
 		a = (a1 + 2*a2) / 3
-		fmt.Printf("A(%v) = %v\n", i, a)
-		a2 = a1
-		a1 = a
+		fmt.Printf("A(%v) = %1.40f\n", i, a)
+		a1 = a2
+		a2 = a
 	}
 }
