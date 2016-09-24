@@ -12,7 +12,7 @@ import (
 
 func main() {
 	var (
-		n, k int
+		n, k, x, y int
 	)
 
 	for n <= 0 {
@@ -22,16 +22,17 @@ func main() {
 	for k <= 0 {
 		k = ioutil.Integer("K")
 	}
-	fmt.Printf("%v\n %v\n", countLoop(n, k))
+	x, y = countLoop(n, k)
+	fmt.Printf("Остаток деления : %v\nЧастное от отделения: %v\n", x, y)
 }
 
-func countLoop(n, k int) {
-	x := n
-	y := -1
+func countLoop(n, k int) (x, y int) {
+	x = n
+	y = -1
 	for x >= 0 {
 		x = x - k
 		y++
 	}
-	return y
-	return x + k
+	x = x + k
+	return x, y
 }

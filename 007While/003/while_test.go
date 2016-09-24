@@ -6,13 +6,14 @@ func TestCountLoop(t *testing.T) {
 	var tests1 = []struct {
 		inputA int
 		inputB int
-		want   int
+		want1  int
+		want2  int
 	}{
-		{9, 3, 3},
+		{20, 3, 2, 6},
 	}
 	for _, test := range tests1 {
-		if got := countLoop(test.inputA, test.inputB); got != test.want {
-			t.Errorf("countLoop(%v, %v) = %v", test.inputA, test.inputB, got)
+		if got1, got2 := countLoop(test.inputA, test.inputB); got1 != test.want1 || got2 != test.want2 {
+			t.Errorf("countLoop(%v, %v) = %v, %v", test.inputA, test.inputB, got1, got2)
 		}
 	}
 }
