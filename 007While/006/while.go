@@ -28,18 +28,11 @@ func main() {
 }
 
 func countLoop(n int) float64 {
-	x := float64(n)
-	y := 2.0
-	if n%2 == 0 {
-		for (float64(n) - y) != 2 {
-			x = x * (x - y)
-			y = y + 2
-		}
-	} else {
-		for (float64(n) - y) != 1 {
-			x = x * (x - y)
-			y = y + 2
-		}
+	x := 1.0
+	y := float64(n)
+	for y >= 2 {
+		x = x * y
+		y = y - 2
 	}
 	return x
 }

@@ -8,6 +8,7 @@ func TestCountLoop(t *testing.T) {
 		want   float64
 	}{
 		{3, 3},
+		{7, 105},
 	}
 	for _, test := range tests1 {
 		if got := countLoop(test.inputA); got != test.want {
