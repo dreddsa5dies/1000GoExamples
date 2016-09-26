@@ -5,11 +5,11 @@ import "testing"
 func TestCountLoop(t *testing.T) {
 	var tests1 = []struct {
 		inputA int
-		want   bool
+		want   int
 	}{
-		{9, true},
-		{20, false},
-		{30, false},
+		{3, 1},
+		{7, 2},
+		{9, 3},
 	}
 	for _, test := range tests1 {
 		if got := countLoop(test.inputA); got != test.want {

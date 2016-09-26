@@ -18,7 +18,7 @@ func TestCountLoop(t *testing.T) {
 	}
 }
 
-func BenchmarkFoo1(b *testing.B) {
+func BenchmarkCountLoop(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		countLoop(8)
 	}
