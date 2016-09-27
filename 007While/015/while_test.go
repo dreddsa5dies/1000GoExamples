@@ -4,16 +4,15 @@ import "testing"
 
 func TestCountLoop(t *testing.T) {
 	var tests = []struct {
-		inputA  int
-		wantK   float64
-		wantSum float64
+		inputP     float64
+		wantMounth int
+		wantSum    float64
 	}{
-		{2, 2.083333333333333, 4},
-		{8, 8.000485571995782, 1674},
+		{25, 1, 1250},
 	}
 	for _, test := range tests {
-		if gotK, gotSum := countLoop(test.inputA); gotK != test.wantK && gotSum != test.wantSum {
-			t.Errorf("countLoop(%v) = %v, %v", test.inputA, gotK, gotSum)
+		if gotSum, gotMounth := countLoop(test.inputP); gotSum != test.wantSum && gotMounth != test.wantMounth {
+			t.Errorf("countLoop(%v) = %v, %v", test.inputP, gotSum, gotMounth)
 		}
 	}
 }
