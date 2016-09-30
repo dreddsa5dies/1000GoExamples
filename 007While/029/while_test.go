@@ -7,7 +7,7 @@ func TestCountLoop(t *testing.T) {
 		input                  float64
 		wantK, wantAK, wantAK1 float64
 	}{
-		{2, 2, 2, 2.5},
+		{12, 2, 2, 1},
 	}
 	for _, test := range tests {
 		if gotK, gotAK, gotAK1 := countLoop(test.input); gotK != test.wantK && gotAK != test.wantAK && gotAK1 != test.wantAK1 {
