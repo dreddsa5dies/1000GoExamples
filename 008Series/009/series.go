@@ -17,7 +17,6 @@ func main() {
 	fmt.Printf("Количество чисел: %v\n", count)
 }
 
-// возврат суммы sum + int(r)
 func series(n int) int {
 	var r, count int
 	for i := 0; i < n; i++ {

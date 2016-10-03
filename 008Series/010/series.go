@@ -15,7 +15,6 @@ func main() {
 	series(n)
 }
 
-// возврат суммы sum + int(r)
 func series(n int) {
 	var (
 		r int

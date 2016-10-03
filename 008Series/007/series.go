@@ -18,7 +18,6 @@ func main() {
 	fmt.Printf("Сумма: %v\n", sum)
 }
 
-// возврат суммы sum + int(r)
 func series(n int) (sum int) {
 	var r float64
 	for i := 0; i < n; i++ {
