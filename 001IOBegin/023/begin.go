@@ -14,6 +14,7 @@ func main() {
 	x = ioutil.Number("Введите A")
 	y = ioutil.Number("Введите B")
 	z = ioutil.Number("Введите C")
+	// перемена значений без выделения новой памяти
 	x = x + y
 	y = x - y // это теперь А
 	x = x - y // это теперь В

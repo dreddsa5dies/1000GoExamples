@@ -28,6 +28,7 @@ func main() {
 	fmt.Printf("чисел %v\n", (m - n - 1))
 }
 
+// заполнение слайса
 func loop(m, n int) []int {
 	var i []int
 	m--
@@ -39,6 +40,7 @@ func loop(m, n int) []int {
 	return i
 }
 
+// перестановка мест в слайсе
 func reserse(s []int) []int {
 	for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {
 		s[i], s[j] = s[j], s[i]
