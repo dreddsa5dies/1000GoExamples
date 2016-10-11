@@ -1,6 +1,6 @@
-// Даны целые числа K , N и набор из N вещественных чисел: A 1 , A 2 , ...,
-// A N . Вывести K -e степени чисел из данного набора:
-// ( A 1 )^K , ( A 2 )^K , ..., ( A N )^K
+// Дано целое число N и набор из N вещественных чисел: A 1 , A 2 , ..., A N .
+// Вывести следующие числа:
+// A 1 , ( A 2 )^2 , ..., ( A N–1 )^N–1 , ( A N )^N
 
 package main
 
@@ -13,12 +13,11 @@ import (
 
 func main() {
 	arr := ioutil.RandomInt(ioutil.Integer("число N"))
-	k := ioutil.Integer("число K")
-	series(arr, k)
+	series(arr)
 }
 
-func series(arr []int, k int) {
+func series(arr []int) {
 	for i := 0; i < len(arr)-1; i++ {
-		fmt.Printf("( A%v = %v )^%v = %v\n", i, arr[i], k, math.Pow(float64(arr[i]), float64(k)))
+		fmt.Printf("( A%v = %v )^%v = %v\n", i+1, arr[i], i+1, math.Pow(float64(arr[i]), float64(i+1)))
 	}
 }
