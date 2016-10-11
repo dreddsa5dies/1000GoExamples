@@ -15,8 +15,19 @@ func main() {
 	fmt.Println(series(ioutil.RandomInt(ioutil.Integer("число N"))))
 }
 
-// создания среза int
-func series(arr []int) []int {
+func series(arr []int) int {
 	arr = append(arr, 0)
-	return arr
+	fmt.Println(arr)
+	sum := 0
+	check := 0
+	for i := 0; i < len(arr)-1; i++ {
+		if arr[i] == 0 && check < 2 {
+			check++
+			for j := i; j < len(arr)-1; j++ {
+				sum = sum + arr[j]
+				check = 0
+			}
+		}
+	}
+	return sum
 }
