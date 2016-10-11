@@ -4,6 +4,7 @@ package ioutil
 import (
 	"fmt"
 	"math"
+	"math/rand"
 )
 
 // Number ввод числа в stdin
@@ -128,4 +129,14 @@ func Symbol(msg string) string {
 		panic("Ввод неверных данных")
 	}
 	return str
+}
+
+// RandomInt create random array []int
+func RandomInt(n int) []int {
+	list := rand.Perm(n)
+	for i := 0; i < len(list); i++ {
+		j := rand.Intn(i + 1)
+		list[i], list[j] = list[j], list[i]
+	}
+	return list
 }
