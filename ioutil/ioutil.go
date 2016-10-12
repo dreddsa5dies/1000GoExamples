@@ -140,3 +140,17 @@ func RandomInt(n int) []int {
 	}
 	return list
 }
+
+// RandomFlt create random array []float64
+func RandomFlt(n int) []float64 {
+	list := rand.Perm(n)
+	var listEnd []float64
+	for i := 0; i < len(list); i++ {
+		j := rand.Intn(i + 1)
+		list[i], list[j] = list[j], list[i]
+	}
+	for k := 0; k < len(list); k++ {
+		listEnd = append(listEnd, float64(list[k]))
+	}
+	return listEnd
+}
