@@ -9,23 +9,24 @@ package main
 
 import (
 	"fmt"
-	"math"
 
 	"github.com/dreddsa5dies/1000GoExamples/ioutil"
 )
 
 func main() {
-	arr := ioutil.RandomFlt(ioutil.Integer("Число треугольников"))
-	for i := 0; i < len(arr); i++ {
-		if arr[i] != 0 {
-			p, s := rectPS(arr[i])
-			fmt.Printf("сторона = %v, периметр = %v, площадь = %v\n", arr[i], p, s)
-		}
+	var x1, y1, x2, y2 float64
+	for i := 0; i < 3; i++ {
+		x1 = ioutil.Number("Введите координату х1")
+		y1 = ioutil.Number("Введите координату y1")
+		x2 = ioutil.Number("Введите координату х2")
+		y2 = ioutil.Number("Введите координату y2")
+		p, s := rectPS(x1, y1, x2, y2)
+		fmt.Printf("периметр прямоугольника\t: %v\n", p)
+		fmt.Printf("площадь прямоугольника\t: %v\n", s)
 	}
-}
 
-func rectPS(a float64) (p, s float64) {
-	p = 3 * a
-	s = math.Pow(a, 2) * math.Sqrt(3) / 4
+func rectPS(x1, y1, x2, y2 float64) (p, s float64) {
+	p = 2 * (ioutil.ModNumber(x1-x2) + ioutil.ModNumber(y1-y2))
+	s = ioutil.ModNumber(x1-x2) * ioutil.ModNumber(y1-y2)
 	return p, s
 }
